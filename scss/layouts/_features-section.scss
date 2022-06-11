@@ -1,0 +1,50 @@
+// features-section
+
+.features {
+    padding-bottom: 0;
+}
+
+.features__list {
+    display: flex;
+}
+
+.features__item {
+    width: 270px;
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.features__subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.features__text {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color)
+}
+
+.features__icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: var(--secondary-bg-color);
+    margin-bottom: 30px;
+    padding: 25px 100px;
+}
+
+.features__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

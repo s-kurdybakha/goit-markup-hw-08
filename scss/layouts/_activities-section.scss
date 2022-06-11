@@ -1,0 +1,53 @@
+// activities-section
+
+
+.activities__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    margin-bottom: 50px;
+}
+
+.activities__list {
+    display: flex;
+}
+
+.activities__item {
+    position: relative;
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+img {
+    display: block;
+}
+
+
+.activities__item-box {
+    position: relative;
+}
+
+.activities__text {
+    position: absolute;
+    display: flex;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(47, 48, 58, 0.8);
+}
