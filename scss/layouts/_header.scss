@@ -17,6 +17,10 @@
     color: var(--secondary-color);
     margin-left: auto;
     display: flex;
+
+    @include mq(mobile) {
+        display: none;
+    }
     
 }
 

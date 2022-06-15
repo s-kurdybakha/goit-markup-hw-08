@@ -39,6 +39,9 @@
     transition-timing-function: var(--timing-function);
 }
 
+.footer__socials{
+    margin-bottom: 60px;
+}
 
 .footer__socials-title {
     font-weight: 700;
@@ -48,8 +51,20 @@
     display: flex;
     text-transform: uppercase;
     align-items: center;
+    justify-content: center;
     color: var(--white-text-color);
     margin-bottom: 20px;
+    
+
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.14;
+    // letter-spacing: 0.03em;
+    // display: flex;
+    // text-transform: uppercase;
+    // align-items: center;
+    // color: var(--white-text-color);
+    // margin-bottom: 20px;
 }
 
 .footer__socials-list {

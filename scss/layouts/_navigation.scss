@@ -2,6 +2,10 @@
 
 .nav__list {
     display: flex;
+
+    @include mq(mobile) {
+        display: none;
+    }
 }
 
 .nav__item {

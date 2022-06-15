@@ -20,6 +20,10 @@
 }
 
 .footer__logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
@@ -27,7 +31,6 @@
     letter-spacing: 0.03em;
     color: var(--accent-color);
     margin-bottom: 20px;
-    display: block;
 }
 
 .footer__logo-white {
