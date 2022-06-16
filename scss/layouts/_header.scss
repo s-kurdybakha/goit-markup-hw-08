@@ -2,6 +2,8 @@
 
 .header {
     border-bottom: 1px solid var(--main-border-color);
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .header__container {
@@ -18,10 +20,9 @@
     margin-left: auto;
     display: flex;
 
-    @include mq(mobile) {
+    @include mq(mobile-only) {
         display: none;
     }
-    
 }
 
 .header__item {

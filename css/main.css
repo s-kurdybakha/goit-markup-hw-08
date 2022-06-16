@@ -813,6 +813,8 @@ input, textarea {
 
 .header {
   border-bottom: 1px solid var(--main-border-color);
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .header__container {
@@ -836,7 +838,7 @@ input, textarea {
   display: flex;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767.98px) {
   .header__list {
     display: none;
   }
@@ -880,7 +882,7 @@ input, textarea {
   display: flex;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767.98px) {
   .nav__list {
     display: none;
   }

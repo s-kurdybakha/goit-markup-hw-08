@@ -3,7 +3,7 @@
 .nav__list {
     display: flex;
 
-    @include mq(mobile) {
+    @include mq(mobile-only) {
         display: none;
     }
 }
