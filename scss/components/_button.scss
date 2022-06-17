@@ -167,13 +167,24 @@
     }
 }
 
-.portfolio__filter-list {
+.filter-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: left;
     margin-bottom: 50px;
+
+
+    // // desktop
+    // display: flex;
+    // justify-content: center;
+    // margin-bottom: 50px;
 }
 
-.portfolio__filter-item {
+.filter-list__item {
+    &:nth-child(-n+3) {
+        margin-bottom: 15px;
+    }
+
     margin-right: 8px;
 
     &:last-child {
@@ -181,7 +192,7 @@
     }    
 }
 
-.portfolio__filter-btn {
+.filter-list__btn {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;

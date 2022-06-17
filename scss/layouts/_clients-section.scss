@@ -27,6 +27,10 @@
     justify-content: center;
     align-items: center;
     margin: -15px;
+
+    @include mq(desktop) { 
+        flex-wrap: nowrap;
+    }
 }
 
 .clients__item {
@@ -60,6 +64,15 @@
     
     transition: fill 250ms var(--timing-function), border 250ms var(--timing-function);
     
+    @include mq(tablet-only) { 
+        width: 226px;
+        height: 92px;
+    }
+
+    @include mq(desktop) { 
+        width: 170px;
+        height: 92px;
+    }
 }
 
 .clients__link:hover,
