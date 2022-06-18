@@ -45,6 +45,33 @@
                     </li>
                 </ul>
         </div>
+
+        <!-- mobile-menu -->
+    
+            <!-- <svg width="40" height="40">
+                <use class="mob-menu" href="./images/sprite.svg#mob-menu"></use>
+                <use class="mob-close-menu" href="./images/sprite.svg#mob-close-menu"></use>
+            </svg>
+        </button>
+        <div class="mob-menu">
+            <ul class="mob-menu__nav list">
+                <li class="mob-menu__nav-item"><a class="menu__nav-link link current" href="./index.html">Студия</a></li>
+                <li class="mob-menu__nav-item"><a class="menu__nav-link link" href="./portfolio.html">Портфолио</a></li>
+                <li class="mob-menu__nav-item"><a class="menu__nav-link link" href="">Контакты</a></li>
+            </ul>
+
+            <ul class="mob-menu__contacts list">
+                <li class="mob-menu__contacts-item"><a class="mob-menu__contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="mob-menu__contacts-item"><a class="mob-menu__contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+
+            <ul class="mob-menu__socials list">
+                <li class="mob-menu__socials-item"><a class="mob-menu__socials-link link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li class="mob-menu__socials-item"><a class="mob-menu__socials-link link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                <li class="mob-menu__socials-item"><a class="mob-menu__socials-link link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li class="mob-menu__socials-item"><a class="mob-menu__socials-link link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>        
+        </div> --> -->
     </header>
 
     <main>
@@ -58,7 +85,7 @@
             </section>
 
                <!-- modal-window -->
-               <!-- <div class="backdrop is-hidden" data-modal>
+               <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
                         
                         <form class="modal__form">
@@ -116,7 +143,7 @@
                             </svg>
                         </button>
                     </div>
-                </div> -->
+                </div>
 
               
 
@@ -167,7 +194,7 @@
 
             </section>
             <!-- activities-section -->
-            <!-- <section class="activities section">
+            <section class="activities section">
                 <div class="container">
                     <h2 class="activities__title">Чем мы занимаемся</h2>
                     <ul class="list activities__list">
@@ -191,20 +218,83 @@
                         </li>
                     </ul>
                 </div>        
-            </section> -->
+            </section>
             <!-- team-section -->
             <section class="team section">
                 <div class="container">
                     <h2 class="team__title">Наша команда</h2>
                     <ul class="list team__list">
                         <li class="team__item">
-                            <img class="team__img" src="./images/team/product-designer_lg.jpg" alt="Игорь Демьяненко" width="450" height="460">
+                            <picture>
+                                <source
+                                    media="(min-width 1200px)"
+                                    srcset="
+                                        ./images/team/product-designer_lg.webp 1x,
+                                        ./images/team/product-designer_lg@2x.webp 2x"
+                                    
+                                    type="image/webp"    
+                                />
+
+                                <source
+                                    media="(min-width 1200px)"
+                                    srcset="
+                                        ./images/team/product-designer_lg.jpg 1x,
+                                        ./images/team/product-designer_lg@2x.jpg 2x"
+                                    
+                                    type="image/jpg"    
+                                />
+
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ./images/team/product-designer_md.webp 1x,
+                                        ./images/team/product-designer_md@2x.webp 2x"
+                                    
+                                    type="image/webp"
+                                />
+                                
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ./images/team/product-designer_md.jpg 1x,
+                                        ./images/team/product-designer_md@2x.jpg 2x"
+                                    
+                                    type="image/jpg"
+                                />
+
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./images/team/product-designer_sm.webp 1x,
+                                        ./images/team/product-designer_sm@2x.webp 2x"
+                                    
+                                    type="image/webp"
+                                />
+                                
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./images/team/product-designer_sm.jpg 1x,
+                                        ./images/team/product-designer_sm@2x.jpg 2x"
+                                    
+                                    type="image/jpg"
+                                />
+
+                                <img 
+                                    class="team__img"
+                                    src="./images/team/product-designer_sm.jpg" 
+                                    alt="Игорь Демьяненко" 
+                                    width="450" 
+                                    height="460"
+                                />
+                            </picture>
+                            
                             <div class="team__aside">
                                 <h3 class="team__subtitle">Игорь Демьяненко</h3>
                                 <p class="team__text" lang="en">Product Designer</p>
                                 <ul class="team__socials-list list">
                                     <li class="team__socials-item">
-                                        <a class="team__socials-link link" href="" target="blank" rel="noopener noreferrer" aria-label="иконка instagram">
+                                        <a class="team__socials-link link" href="https://www.instagram.com/" target="blank" rel="noopener noreferrer" aria-label="иконка instagram">
                                         <svg class="team__socials-icon" width="20" height="20">
                                             <use href="./images/sprite.svg#icon-instagram"></use>
                                         </svg>
@@ -235,7 +325,70 @@
                             </div>
                         </li>
                         <li class="team__item">
-                            <img class="team__img" src="./images/team/frontend-developer_lg.jpg" alt="Ольга Репина" width="450" height="450">
+                            <picture>
+                                <source
+                                    media="(min-width 1200px)"
+                                    srcset="
+                                        ../images/team/frontend-developer_lg.webp 1x,
+                                        ../images/team/frontend-developer_lg@2x.webp 2x"
+                                    
+                                    type="image/webp"    
+                                />
+
+                                <source
+                                    media="(min-width 1200px)"
+                                    srcset="
+                                        ../images/team/frontend-developer_lg.jpg 1x,
+                                        ../images/team/frontend-developer_lg@2x.jpg 2x"
+                                    
+                                    type="image/jpg"    
+                                />
+
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ../images/team/frontend-developer_md.webp 1x,
+                                        ../images/team/frontend-developer_md@2x.webp 2x"
+                                    
+                                    type="image/webp"
+                                />
+                                
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ../images/team/frontend-developer_md.jpg 1x,
+                                        ../images/team/frontend-developer_md@2x.jpg 2x"
+                                    
+                                    type="image/jpg"
+                                />
+
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ../images/team/frontend-developer_sm.webp 1x,
+                                        ../images/team/frontend-developer_sm@2x.webp 2x"
+                                    
+                                    type="image/webp"
+                                />
+                                
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ../images/team/frontend-developer_sm.jpg 1x,
+                                        ../images/team/frontend-developer_sm@2x.jpg 2x"
+                                    
+                                    type="image/jpg"
+                                />
+
+                                <img 
+                                    class="team__img"
+                                    src="./images/team/frontend-developer_sm.jpg" 
+                                    alt="Ольга Репина" 
+                                    width="450" 
+                                    height="460"
+                                />
+                            </picture>
+                           
                             <div class="team__aside">
                                 <h3 class="team__subtitle">Ольга Репина</h3>
                                 <p class="team__text" lang="en">Frontend Developer</p>
@@ -272,7 +425,70 @@
                             </div>
                         </li>
                         <li class="team__item">
-                            <img class="team__img" src="./images/team/marketing_lg.jpg" alt="Николай Тарасов" width="450" height="450">
+                            <picture>
+                                <source
+                                    media="(min-width 1200px)"
+                                    srcset="
+                                        ./images/team/marketing_lg.webp 1x,
+                                        ./images/team/marketing_lg@2x.webp 2x"
+                                    
+                                    type="image/webp"    
+                                />
+
+                                <source
+                                    media="(min-width 1200px)"
+                                    srcset="
+                                        ./images/team/marketing_lg.jpg 1x,
+                                        ./images/team/marketing_lg@2x.jpg 2x"
+                                    
+                                    type="image/jpg"    
+                                />
+
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ./images/team/marketing_md.webp 1x,
+                                        ./images/team/marketing_md@2x.webp 2x"
+                                    
+                                    type="image/webp"
+                                />
+                                
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ./images/team/marketing_md.jpg 1x,
+                                        ./images/team/marketing_md@2x.jpg 2x"
+                                    
+                                    type="image/jpg"
+                                />
+
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./images/team/marketing_sm.webp 1x,
+                                        ./images/team/marketing_sm@2x.webp 2x"
+                                    
+                                    type="image/webp"
+                                />
+                                
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./images/team/marketing_sm.jpg 1x,
+                                        ./images/team/marketing_sm@2x.jpg 2x"
+                                    
+                                    type="image/jpg"
+                                />
+
+                                <img 
+                                    class="team__img"
+                                    src="./images/team/marketing_sm.jpg" 
+                                    alt="Николай Тарасов" 
+                                    width="450" 
+                                    height="460"
+                                />
+                            </picture>
+                            
                             <div class="team__aside">
                                 <h3 class="team__subtitle">Николай Тарасов</h3>
                                 <p class="team__text" lang="en">Marketing</p>
@@ -308,8 +524,71 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="team__item">
-                            <img class="team__img" src="./images/team/ui-designer_lg.jpg" alt="Михаил Ермаков" width="450" height="450">
+                        <li class="team__item">              
+                            <picture>
+                                <source
+                                    media="(min-width 1200px)"
+                                    srcset="
+                                        ./images/team/ui-designer_lg.webp 1x,
+                                        ./images/team/ui-designer_lg@2x.webp 2x"
+                                    
+                                    type="image/webp"    
+                                />
+
+                                <source
+                                    media="(min-width 1200px)"
+                                    srcset="
+                                        ./images/team/ui-designer_lgjpg 1x,
+                                        ./images/team/ui-designer_lg2x.jpg 2x"
+                                    
+                                    type="image/jpg"    
+                                />
+
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ./images/team/ui-designer_mdwebp 1x,
+                                        ./images/team/ui-designer_md2x.webp 2x"
+                                    
+                                    type="image/webp"
+                                />
+                                
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ./images/team/ui-designer_md.jpg 1x,
+                                        ./images/team/ui-designer_md@2x.jpg 2x"
+                                    
+                                    type="image/jpg"
+                                />
+
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./images/team/ui-designer_sm.webp 1x,
+                                        ./images/team/ui-designer_sm@2x.webp 2x"
+                                    
+                                    type="image/webp"
+                                />
+                                
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./images/team/ui-designer_sm.jpg 1x,
+                                        ./images/team/ui-designer_sm@2x.jpg 2x"
+                                    
+                                    type="image/jpg"
+                                />
+
+                                <img 
+                                    class="team__img"
+                                    src="./images/team/ui-designer_sm.jpg" 
+                                    alt="Михаил Ермаков" 
+                                    width="450" 
+                                    height="460"
+                                />
+                            </picture>
+                            
                             <div class="team__aside">
                                 <h3 class="team__subtitle">Михаил Ермаков</h3>
                                 <p class="team__text" lang="en">UI Designer</p>
@@ -474,6 +753,7 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
 

@@ -1,14 +1,21 @@
 //footer-form
 
 .footer-subscription {
-    margin-left: auto;
-
+    
+    @include mq(desktop) { 
+        margin-left: auto;
+    } 
 }
 
 .footer__form {
     display: block;
     justify-content: center;
     align-items: center;
+
+    @include mq(desktop) { 
+        display: flex;
+        align-items: flex-start;
+    } 
 }
 
 .footer__form-title {
@@ -21,6 +28,10 @@
     justify-content: center;
     margin-bottom: 20px;
     color: var(--white-text-color);
+
+    @include mq(desktop) { 
+        justify-content: flex-start;
+    } 
 
 }
 
@@ -40,6 +51,16 @@
 
     transition: border-color 250ms var(--timing-function);
 
+    @include mq(tablet) { 
+        width: 450px;
+        margin-right: auto;
+        margin-left: auto;
+    } 
+
+    @include mq(desktop) { 
+        width: 358px;
+        margin-right: 12px;
+    } 
 }
 
 .footer__form-input::placeholder {

@@ -219,3 +219,36 @@
     }
 }
 
+.menu-button {
+    position: absolute;
+    background: transparent;
+    top: 10px;
+    right: 15px;
+    border: 0;
+    z-index: 25;
+    // display: inline-flex;
+    // position: absolute;
+    // padding: 0;
+    // line-height: 0;
+    // width: 40px;
+    // height: 40px;
+    // top: 21px;
+    // right: 25px;
+    // border: 0;
+    // background-color: transparent;
+}
+
+
+
+.menu-button .mob-close-menu {
+    display: none;
+}
+
+.menu-button.is-open .mob-close-menu {
+    display: block;
+}
+
+.menu-button.is-open .mob-menu {
+    display: none;
+}
+

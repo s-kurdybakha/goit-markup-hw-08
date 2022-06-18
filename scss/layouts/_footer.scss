@@ -12,6 +12,17 @@
 .footer__container {
     display: block;
 
+    @include mq(tablet){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+
+    @include mq(desktop){
+        display: flex;
+    }
+
     // display: flex;
     // align-items: baseline;
 }
@@ -26,9 +37,14 @@
 
 .footer__address-block {
     margin-bottom: 60px;
-    
-    // // desktop
-    // margin-right: 70px;
+
+    @include mq(tablet) { 
+        display: inline-block;
+    } 
+
+    @include mq(desktop) { 
+        margin-right: 70px;
+    } 
 }
 
 .footer__address {

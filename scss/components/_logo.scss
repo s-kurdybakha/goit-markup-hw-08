@@ -8,15 +8,16 @@
     letter-spacing: 0.03em;
     color: var(--accent-color);
     
+    @include mq(tablet) { 
+        margin-right: 88px;
+    } 
 
-    // desktop
-    // font-family: var(--secondary-font);
-    // font-weight: 700;
-    // font-size: 26px;
-    // line-height: 1.19;
-    // letter-spacing: 0.03em;
-    // color: var(--accent-color);
-    // margin-right: 93px;
+    @include mq(desktop) { 
+        font-size: 26px;
+        line-height: 1.19;
+        margin-right: 93px;
+    } 
+
 }
 
 .header__logo-black {
@@ -27,13 +28,14 @@
     letter-spacing: 0.03em;
     color: var(--black-text-color);
     
-    // // desktop
-    // font-family: var(--secondary-font);
-    // font-weight: 700;
-    // font-size: 26px;
-    // line-height: 1.19;
-    // letter-spacing: 0.03em;
-    // color: var(--black-text-color);
+    @include mq(desktop) { 
+        font-size: 26px;
+        line-height: 1.19;
+    } 
+
+
+
+
 }
 
 .footer__logo {

@@ -1,5 +1,10 @@
 // activities-section
 
+.activities {
+    @include mq(not-desktop) { 
+       display: none;
+    } 
+}
 
 .activities__title {
     font-weight: 700;
