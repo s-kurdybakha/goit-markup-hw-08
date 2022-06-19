@@ -80,10 +80,14 @@
 }
 
 
-
 .header__icon {
     margin-right: 10px;
     fill: currentColor;
+
+    @include mq(tablet-only) {
+        width: 14px;
+        height: 10px;
+    }
 }
 
 
