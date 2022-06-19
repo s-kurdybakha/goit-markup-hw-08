@@ -1167,6 +1167,7 @@ input, textarea {
   padding-bottom: 200px;
   height: 600px;
   max-width: 1600px;
+  min-width: 50px;
   margin-left: auto;
   margin-right: auto;
   background-position: center;
@@ -1176,43 +1177,43 @@ input, textarea {
 
 @media screen and (max-width: 767.98px) {
   .hero {
-    background-image: url("/images/hero/bg-img-hero-sm.jpg"), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
-    background-image: url("/images/hero/bg-img-hero-sm.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: url("../images/hero/bg-img-hero-sm.jpg"), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url("../images/hero/bg-img-hero-sm.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 
 @media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("/images/hero/bg-img-hero-sm@2x.jpg"), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
-    background-image: url("/images/hero/bg-img-hero-sm@2x.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: url("../images/hero/bg-img-hero-sm@2x.jpg"), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url("../images/hero/bg-img-hero-sm@2x.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url("/images/hero/bg-img-hero-md.jpg"), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
-    background-image: url("/images/hero/bg-img-hero-md.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: url("../images/hero/bg-img-hero-md.jpg"), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url("../images/hero/bg-img-hero-md.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("/images/hero/bg-img-hero-md@2x.jpg"), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
-    background-image: url("/images/hero/bg-img-hero-md@2x.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: url("../images/hero/bg-img-hero-md@2x.jpg"), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url("../images/hero/bg-img-hero-md@2x.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url("/images/hero/bg-img-hero-lg.jpg"), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
-    background-image: url("/images/hero/bg-img-hero-lg.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: url("../images/hero/bg-img-hero-lg.jpg"), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url("../images/hero/bg-img-hero-lg.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("/images/hero/bg-img-hero-lg@2x.jpg"), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
-    background-image: url("/images/hero/bg-img-hero-lg@2x.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: url("../images/hero/bg-img-hero-lg@2x.jpg"), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url("../images/hero/bg-img-hero-lg@2x.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 
@@ -1414,7 +1415,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 320px;
+  min-width: 50px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1575,9 +1576,13 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   min-width: 320px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    margin: -15px;
+  }
 }
 
 .portfolio-list__aside {
@@ -1592,12 +1597,19 @@ img {
   margin-bottom: 30px;
 }
 
-.portfolio-list__item:nth-child(n + 7) {
-  margin-bottom: 0;
+@media screen and (min-width: 768px) {
+  .portfolio-list__item {
+    margin: 15px;
+  }
 }
 
-.portfolio-list__item:nth-child(3n + 3) {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .portfolio-list__item:nth-child(n + 7) {
+    margin-bottom: 0;
+  }
+  .portfolio-list__item:nth-child(3n + 3) {
+    margin-right: 0;
+  }
 }
 
 .portfolio-list__link {
@@ -1648,10 +1660,16 @@ img {
   opacity: 1;
 }
 
+@media screen and (max-width: 767.98px) {
+  .portfolio-list__desc {
+    padding: 77px 24px;
+  }
+}
+
 .portfolio-list__subtitle {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 2.0;
+  font-size: 16px;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--main-color);
   margin-bottom: 4px;
