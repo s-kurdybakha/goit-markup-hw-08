@@ -12,7 +12,7 @@
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    min-width: 320px;
+    min-width: 50px;
 
     @include mq(tablet) {
         margin: -15px;
@@ -29,6 +29,7 @@
 .portfolio-list__item {
     position: relative;
     margin-bottom: 30px;
+    
 
     @include mq(tablet) {
         margin: 15px;

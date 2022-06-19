@@ -55,6 +55,10 @@
     @include mq(tablet) {
         margin: 15px;
     }
+
+    @include mq(desktop) {
+        width: 20%;
+    }
 }
 
 .team__img {

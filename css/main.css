@@ -1219,13 +1219,20 @@ input, textarea {
 
 .hero__slogan {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text-color);
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__slogan {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 @media screen and (max-width: 1199.98px) {
@@ -1446,6 +1453,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 20%;
+  }
+}
+
 .team__aside {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1576,7 +1589,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  min-width: 320px;
+  min-width: 50px;
 }
 
 @media screen and (min-width: 768px) {
