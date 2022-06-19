@@ -58,15 +58,14 @@
 }
 
 .team__img {
-    @include mq(tablet) {
-        width: 354px;
-        height: 374px;
-    }
+    
+    // @include mq(tablet) {
+    //     height: 100%;
+    // }
 
-    @include mq(desktop) { 
-        width: 270px;
-        height: 260px;
-    }
+    // @include mq(desktop) { 
+    //     height: 100%;
+    // }
 }
 
 .team__aside {
