@@ -50,7 +50,9 @@
 
 
 .features__subtitle {
-        margin-bottom: 10px;  
+    margin-bottom: 10px;  
+    text-transform: uppercase;
+    color: var(--main-color);
 }
 
 .features__text {

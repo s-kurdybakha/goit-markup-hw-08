@@ -3,7 +3,12 @@
 .activities {
     @include mq(not-desktop) { 
        display: none;
-    } 
+    }
+
+    @include mq(desktop) { 
+        padding-top: 0;
+    }
+
 }
 
 .activities__title {

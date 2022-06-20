@@ -54,6 +54,7 @@
 
     @include mq(tablet) {
         margin: 15px;
+        width: 46%;
     }
 
     @include mq(desktop) {

@@ -1,55 +1,57 @@
 // mobile-menu
 
+.mob-menu-container {
+    display: none;
+
+    &.is-open {
+        display: block;
+    }
+}
+
 .mob-menu {
-        display: none;
-        position: fixed;
-        z-index: 20;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 40px;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 
+    padding: 40px;
+
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    
+    color: currentColor;
+    background-color: var(--main-bg-color);
+
+    &__phone-link {
         font-weight: 500;
-        font-size: 40px;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
-        
-        color: currentColor;
-        background-color: var(--main-bg-color);
+        font-size: 34px;           
+    }
 
-        &__phone-link {
-            font-weight: 500;
-            font-size: 34px;           
-        }
+    &__nav-item:not(:last-child) {
+        margin-bottom: 30px;
+    }
 
-        &__nav-item:not(:last-child) {
-            margin-bottom: 30px;
-        }
+    &__contacts-item:not(:last-child) {
+        margin-bottom: 32px;
+    }
 
-        &__contacts-item:not(:last-child) {
-            margin-bottom: 32px;
-        }
-
-        &__socials {
-            display: flex;
-            justify-content: space-between;
-            font-size: 18px;
-            line-height: 1.22;
-            color: var(--accent-color);
-        }
-
-        
-        @media screen and (max-height: 500px) {
-            overflow-y: scroll;
-        }
-
-
-        &.is-open {
-            display: block;
-        }
+    &__socials {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        line-height: 1.22;
+        color: var(--accent-color);
+    }
+    
+    @media screen and (max-height: 500px) {
+        overflow-y: scroll;
+    }
 
     @include mq(tablet) { 
         display: none;
@@ -85,11 +87,15 @@
 }
 
 .mob-menu__email-link {
-    color: var(--secondary-color);
     font-size: 24px;
     color: var(--secondary-color);
     
     transition: color 250ms var(--timing-function);
 }
 
+.mob-menu__bottom-side {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
 
