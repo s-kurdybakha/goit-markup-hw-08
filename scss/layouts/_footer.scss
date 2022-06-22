@@ -28,11 +28,19 @@
 }
 
 .footer__item {
-    // margin-bottom: 9px;
+    margin-bottom: 8px;
     
-    // &:last-child {
-    //     margin-bottom: 0;
-    // }
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include mq(desktop){
+        margin-bottom: 9px;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .footer__address-block {
